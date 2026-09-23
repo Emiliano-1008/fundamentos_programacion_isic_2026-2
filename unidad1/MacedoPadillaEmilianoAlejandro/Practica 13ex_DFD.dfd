@@ -1,0 +1,124 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+33
+'Cuantos puertos vas a ingresar?'
+5
+1
+13
+numeroPuertos
+6
+3
+13
+prioridadAlta
+1
+0
+14
+prioridadMedia
+1
+0
+13
+prioridadBaja
+1
+0
+6
+1
+5
+veces
+1
+1
+9
+1
+22
+veces <= numeroPuertos
+4
+1
+29
+'Ingresa tu numero de puerto'
+5
+1
+13
+puertoUsuario
+7
+0
+1
+18
+puertoUsuario >= 1
+4
+1
+17
+'Puerto Invalido'
+13
+7
+1
+1
+21
+puertoUsuario <= 1025
+4
+1
+16
+'Prioridad Alta'
+6
+1
+13
+prioridadAlta
+17
+prioridadAlta + 1
+13
+7
+1
+1
+22
+puertoUsuario <= 49151
+4
+1
+17
+'Prioridad Media'
+6
+1
+14
+prioridadMedia
+17
+prioridadMedia +1
+13
+7
+0
+1
+22
+puertoUsuario <= 65535
+4
+1
+17
+'Puerto Invalido'
+13
+4
+1
+16
+'Prioridad Baja'
+6
+1
+13
+prioridadBaja
+16
+prioridadBaja +1
+13
+13
+13
+13
+6
+1
+5
+veces
+9
+veces + 1
+11
+4
+1
+120
+'RESUMEN: Prioridad baja: ', prioridadBaja, ' , Prioridad Media: ', prioridadMedia, ' , Prioridad Alta: ', prioridadAlta
+1
