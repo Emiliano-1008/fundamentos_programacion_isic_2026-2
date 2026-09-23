@@ -1,0 +1,63 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+29
+'Ingresa tu numero de puerto'
+5
+1
+13
+puertoUsuario
+7
+0
+1
+18
+puertoUsuario >= 1
+4
+1
+17
+'Puerto Invalido'
+13
+7
+1
+1
+21
+puertoUsuario <= 1025
+4
+1
+16
+'Prioridad Alta'
+13
+7
+1
+1
+22
+puertoUsuario <= 49151
+4
+1
+17
+'Prioridad Media'
+13
+7
+0
+1
+22
+puertoUsuario <= 65535
+4
+1
+17
+'Puerto Invalido'
+13
+4
+1
+16
+'Prioridad Baja'
+13
+13
+13
+13
+1
