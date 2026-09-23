@@ -1,0 +1,13 @@
+Algoritmo VerificadorSLA
+    Definir tiempoRespuesta, SLA_LIMITE Como Real
+    Definir cumpleSLA Como Logico
+	
+    SLA_LIMITE <- 200.0
+	
+    Escribir "Tiempo de respuesta en milisegundos:"
+    Leer tiempoRespuesta
+	
+    cumpleSLA <- tiempoRespuesta <= SLA_LIMITE
+	
+    Escribir "¿Cumple el SLA?: ", cumpleSLA
+FinAlgoritmo

@@ -1,0 +1,16 @@
+Algoritmo DesgloseTiempo
+    Definir segundosTotales, horas, segundosRestantes Como Entero
+    Definir minutos, segundosFinales Como Entero
+	
+    Escribir "Segundos totales:"
+    Leer segundosTotales
+	
+    horas <- TRUNC(segundosTotales / 3600)
+    segundosRestantes <- segundosTotales MOD 3600
+    minutos <- TRUNC(segundosRestantes / 60)
+    segundosFinales <- segundosRestantes MOD 60
+	
+    Escribir "Horas: ", horas
+    Escribir "Minutos: ", minutos
+    Escribir "Segundos: ", segundosFinales
+FinAlgoritmo

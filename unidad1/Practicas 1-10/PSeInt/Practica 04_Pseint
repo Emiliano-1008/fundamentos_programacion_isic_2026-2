@@ -1,0 +1,19 @@
+Algoritmo DimensionamientoDucto
+    Definir radio, S Como Real
+    Definir PI_VALOR, areaBase, areaLateral, volumen Como Real
+	
+    PI_VALOR <- 3.14159265
+	
+    Escribir "Radio del ducto:"
+    Leer radio
+    Escribir "Longitud del ducto:"
+    Leer S
+	
+    areaBase <- PI_VALOR * (radio * radio)
+    areaLateral <- 2 * PI_VALOR * radio * S
+    volumen <- PI_VALOR * (radio * radio) * S
+	
+    Escribir "Área de la base: ", areaBase, " unidades cuadradas"
+    Escribir "Área lateral: ", areaLateral, " unidades cuadradas"
+    Escribir "Volumen: ", volumen, " unidades cúbicas"
+FinAlgoritmo

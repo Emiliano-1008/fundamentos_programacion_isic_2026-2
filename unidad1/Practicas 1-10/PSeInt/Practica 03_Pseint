@@ -1,0 +1,22 @@
+Algoritmo PuntoVentaTecnologia
+    Definir precioProd1, precioProd2, precioProd3 Como Real
+    Definir subtotal, montoIVA, costoEnvio, totalFinal Como Real
+	
+    Escribir "Precio del producto 1:"
+    Leer precioProd1
+    Escribir "Precio del producto 2:"
+    Leer precioProd2
+    Escribir "Precio del producto 3:"
+    Leer precioProd3
+	
+    subtotal <- precioProd1 + precioProd2 + precioProd3
+    montoIVA <- subtotal * 0.16
+    costoEnvio <- 150.00
+    totalFinal <- subtotal + montoIVA + costoEnvio
+	
+    Escribir "----- TICKET DE COMPRA -----"
+    Escribir "Subtotal: $", subtotal
+    Escribir "IVA (16%): $", montoIVA
+    Escribir "Costo de envío: $", costoEnvio
+    Escribir "Total final: $", totalFinal
+FinAlgoritmo

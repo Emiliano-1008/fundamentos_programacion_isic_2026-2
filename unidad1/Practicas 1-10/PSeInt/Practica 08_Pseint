@@ -1,0 +1,14 @@
+Algoritmo CandidatoBeca
+    Definir promedioGeneral Como Real
+    Definir creditosAprobados Como Entero
+    Definir esElegible Como Logico
+	
+    Escribir "Promedio general:"
+    Leer promedioGeneral
+    Escribir "Créditos aprobados:"
+    Leer creditosAprobados
+	
+    esElegible <- (promedioGeneral >= 85.0) Y (creditosAprobados >= 45)
+	
+    Escribir "¿Es elegible para la beca?: ", esElegible
+FinAlgoritmo

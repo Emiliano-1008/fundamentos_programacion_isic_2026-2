@@ -1,0 +1,54 @@
+Algoritmo CalculadoraPresupuestal
+    Definir nombreProyecto Como Cadena
+    Definir horasDesarrollo, plazoClienteDias Como Entero
+    Definir costoHora, presupuestoCliente Como Real
+    Definir subtotal, imprevistos, descuento Como Real
+    Definir costoTotalNeto, impuestoLicencias, granTotal Como Real
+    Definir diasTotales, horasSobrantes, semanasCompletas Como Entero
+    Definir presupuestoViable, plazoViable, proyectoAprobado Como Logico
+    Definir JORNADA_DIARIA, DIAS_SEMANA Como Entero
+	
+    JORNADA_DIARIA <- 8
+    DIAS_SEMANA <- 5
+	
+    Escribir "Nombre del proyecto:"
+    Leer nombreProyecto
+    Escribir "Horas totales de desarrollo:"
+    Leer horasDesarrollo
+    Escribir "Costo por hora:"
+    Leer costoHora
+    Escribir "Presupuesto máximo del cliente:"
+    Leer presupuestoCliente
+    Escribir "Plazo máximo tolerado en días:"
+    Leer plazoClienteDias
+	
+    subtotal <- horasDesarrollo * costoHora
+    imprevistos <- subtotal * 0.12
+    descuento <- subtotal * 0.05
+    costoTotalNeto <- subtotal + imprevistos - descuento
+    impuestoLicencias <- costoTotalNeto * 0.16
+    granTotal <- costoTotalNeto + impuestoLicencias
+	
+    diasTotales <- TRUNC(horasDesarrollo / JORNADA_DIARIA)
+    horasSobrantes <- horasDesarrollo MOD JORNADA_DIARIA
+    semanasCompletas <- TRUNC(diasTotales / DIAS_SEMANA)
+	
+    presupuestoViable <- granTotal <= presupuestoCliente
+    plazoViable <- diasTotales <= plazoClienteDias
+    proyectoAprobado <- presupuestoViable Y plazoViable
+	
+    Escribir "----- RESULTADOS DEL PROYECTO -----"
+    Escribir "Proyecto: ", nombreProyecto
+    Escribir "Subtotal de mano de obra: $", subtotal
+    Escribir "Imprevistos (12%): $", imprevistos
+    Escribir "Descuento (5%): $", descuento
+    Escribir "Costo total neto: $", costoTotalNeto
+    Escribir "IVA de licencias (16%): $", impuestoLicencias
+    Escribir "Gran total: $", granTotal
+    Escribir "Días totales requeridos: ", diasTotales
+    Escribir "Horas sobrantes: ", horasSobrantes
+    Escribir "Semanas laborales completas: ", semanasCompletas
+    Escribir "Presupuesto viable: ", presupuestoViable
+    Escribir "Plazo viable: ", plazoViable
+    Escribir "Proyecto aprobado: ", proyectoAprobado
+FinAlgoritmo

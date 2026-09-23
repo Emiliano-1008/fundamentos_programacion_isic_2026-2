@@ -1,0 +1,11 @@
+Algoritmo AltaRegistroEstudiante
+		Escribir "Número de control:"; Leer numeroControl
+		Escribir "Nombre completo:"; Leer nombreCompleto
+		Escribir "Promedio de preparatoria:"; Leer promedioPrepa
+		Escribir "¿Documentación completa? (Verdadero/Falso):"; Leer estatusDocumentos
+		Escribir "----- FICHA ESCOLAR -----"
+		Escribir "Número de control: ", numeroControl
+		Escribir "Nombre: ", nombreCompleto
+		Escribir "Promedio: ", promedioPrepa
+		Escribir "Documentación completa: ", estatusDocumentos
+FinAlgoritmo

@@ -1,0 +1,20 @@
+Algoritmo MonitorDatacenter
+    Definir temperatura, humedad Como Real
+    Definir tempOk, humedadOk Como Logico
+    Definir operacionNormativa, alertaRiesgo Como Logico
+	
+    Escribir "Temperatura actual en grados Celsius:"
+    Leer temperatura
+    Escribir "Humedad relativa en porcentaje:"
+    Leer humedad
+	
+    tempOk <- (temperatura >= 18.0) Y (temperatura <= 24.0)
+    humedadOk <- (humedad >= 40.0) Y (humedad <= 60.0)
+    operacionNormativa <- tempOk Y humedadOk
+    alertaRiesgo <- (temperatura > 24.0) O (humedad > 60.0)
+	
+    Escribir "Temperatura dentro del rango: ", tempOk
+    Escribir "Humedad dentro del rango: ", humedadOk
+    Escribir "Operación normativa: ", operacionNormativa
+    Escribir "Alerta de riesgo: ", alertaRiesgo
+FinAlgoritmo

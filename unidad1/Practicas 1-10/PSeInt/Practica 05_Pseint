@@ -1,0 +1,17 @@
+Algoritmo PromedioPonderado
+    Definir notaExamenes, notaPracticas, notaProyecto, notaTareas Como Real
+    Definir promedio_Ponderado Como Real
+	
+    Escribir "Nota de exámenes:"
+    Leer notaExamenes
+    Escribir "Nota de prácticas:"
+    Leer notaPracticas
+    Escribir "Nota del proyecto:"
+    Leer notaProyecto
+    Escribir "Nota de tareas y autoevaluación:"
+    Leer notaTareas
+	
+    promedio_Ponderado <- (notaExamenes * 0.40) + (notaPracticas * 0.30) + (notaProyecto * 0.20) + (notaTareas * 0.10)
+	
+    Escribir "Promedio ponderado final: ", promedio_Ponderado
+FinAlgoritmo

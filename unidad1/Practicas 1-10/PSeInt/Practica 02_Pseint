@@ -1,0 +1,14 @@
+	Algoritmo ConversorAlmacenamiento
+		Definir capacidadGB, capacidadMB, capacidadKB, capacidadTB Como Real
+		
+		Escribir "Capacidad en GB:"
+		Leer capacidadGB
+		
+		capacidadMB <- capacidadGB * 1024
+		capacidadKB <- capacidadMB * 1024
+		capacidadTB <- capacidadGB / 1024
+		
+		Escribir "Megabytes: ", capacidadMB, " MB"
+		Escribir "Kilobytes: ", capacidadKB, " KB"
+		Escribir "Terabytes: ", capacidadTB, " TB"
+FinAlgoritmo
